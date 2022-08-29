@@ -6,7 +6,7 @@ csv_data[1, c("User", "Email")]
 
 
 # Reading Excel file & performing basic operations on the data. 
-install.packages("readxl")
+#install.packages("readxl")
 library(readxl)
 xl_data <- read_excel("testData.xlsx")
 xl_data$User
@@ -18,7 +18,7 @@ data() # Returns a list of all built-in data sets
 co2_data = help(co2) # Returns a documentation of the data set
 
 # Reading text files
-text <- readLines("stringoperation.txt")
+text <- readLines("stringoperation.txt") # Reads each text line (ending with a line break) in a text file and returns a character vector.
 text[1]
 toupper(text[1])
 length(text) # Returns the total line numbers
