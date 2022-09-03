@@ -56,10 +56,10 @@ preprocess_covid_data_frame <- function(data_frame) {
 # call `preprocess_covid_data_frame` function and assign it to a new data frame
 covid_df <- preprocess_covid_data_frame(table_data)
 summary(covid_df)
-write.csv(covid_df, file = "C:/Users/Vidyanshu.Vishal/Documents/R Learning/covid.csv")
+write.csv(covid_df, file = "D:/Documents/R Learning/covid.csv")
 
 # Read covid_data_frame_csv from the csv file
-covid_data_frame_csv <- read.csv("C:/Users/Vidyanshu.Vishal/Documents/R Learning/covid.csv")
+covid_data_frame_csv <- read.csv("D:/Documents/R Learning/covid.csv")
 
 # Get the 5th to 10th rows, with two "country" "confirmed" columns
 covid_data_frame_csv[5:10, c("country", "confirmed")]
